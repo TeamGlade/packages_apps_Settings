@@ -445,4 +445,10 @@
     <string name="interruptions_ignore_while_media_summary">Do not reduce media playback volume when
  a notification arrives</string>
 
+    <!-- Share Glade -->
+    <string name="share_glade_title">Share Glade Rom</string>
+    <string name="share_glade_summary">Let others know about Glade Rom</string>
+    <string name="share_message">Check out what Glade is all about https://plus.google.com/communities/117737801882220222019</string>
+    <string name="share_chooser_title">Share Glade Rom</string>
+
 </resources>
