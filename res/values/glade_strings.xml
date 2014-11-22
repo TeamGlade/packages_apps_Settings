@@ -57,4 +57,7 @@
    <!-- Generic strings -->
    <string name="font_size_sample">Sample</string>
 
+    <!--Back to kill timeout -->
+    <string name="long_press_kill_delay">App kill delay</string>
+
 </resources>
