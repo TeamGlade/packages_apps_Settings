@@ -12,6 +12,11 @@
             android:summary="@string/status_bar_double_tap_to_sleep_summary"
             android:title="@string/status_bar_double_tap_to_sleep_title" />
 
+        <PreferenceScreen
+            android:fragment="com.android.settings.glade.StatusBarClockStyle"
+            android:key="clock_style_pref"
+            android:title="@string/status_bar_clock" />
+
     </PreferenceCategory>
 
 </PreferenceScreen>
