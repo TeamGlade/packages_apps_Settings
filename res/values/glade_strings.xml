@@ -374,6 +374,7 @@
     <!-- Status bar -->
     <string name="status_bar_title">Status bar</string>
     <string name="status_bar_style_title">Style</string>
+    <string name="status_bar_options_title">Options</string>
 
     <!-- Status bar | Clock -->
     <string name="status_bar_clock">Clock and date</string>
@@ -446,5 +447,9 @@
     <string name="media_scanner_on_boot_enabled">Scan media</string>
     <string name="media_scanner_on_boot_ask">Ask to scan (notification)</string>
     <string name="media_scanner_on_boot_disabled">Do not scan media</string>
+
+    <!-- Double Tap To Sleep -->
+    <string name="double_tap_to_sleep_title">Double-tap to sleep</string>
+    <string name="double_tap_to_sleep_summary">Double tap status bar to put the device to sleep</string>
 
 </resources>

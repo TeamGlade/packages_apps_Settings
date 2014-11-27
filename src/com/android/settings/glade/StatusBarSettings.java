@@ -1,4 +1,4 @@
-package com.android.settings.simpleaosp;
+package com.android.settings.glade;
 
 import android.os.Bundle;
 import com.android.settings.R;

@@ -24,7 +24,6 @@ import android.view.ViewGroup;
 import com.android.settings.glade.StatusBarSettings;
 import com.android.settings.glade.NavigationBarSettings;
 import com.android.settings.glade.About;
-import com.android.settings.glade.QsSettings;
 
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
@@ -82,8 +81,7 @@ public class GladeSettings extends SettingsPreferenceFragment {
             super(fm);
 	    frags[0] = new StatusBarSettings();
             frags[1] = new NavigationBarSettings();
-            frags[3] = new QsSettings();
-            frags[3] = new About();
+            frags[2] = new About();
         }
 
         @Override
@@ -107,7 +105,6 @@ public class GladeSettings extends SettingsPreferenceFragment {
         titleString = new String[]{
 		    getString(R.string.status_bar_title),
                     getString(R.string.navigation_bar_title),
-                    getString(R.string.qs_settings.xml),
                     getString(R.string.about_glade)};
         return titleString;
     }
