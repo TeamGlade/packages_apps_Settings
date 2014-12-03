@@ -211,10 +211,8 @@ public class SecuritySettings extends SettingsPreferenceFragment
         // Add options for device encryption
         mIsPrimary = UserHandle.myUserId() == UserHandle.USER_OWNER;
 
-        if (mIsPrimary) {
-            // App security settings
-            addPreferencesFromResource(R.xml.security_settings_app_glade);
-        }
+        // App security settings
+        addPreferencesFromResource(R.xml.security_settings_app_glade);
 
         // Add options for lock/unlock screen
         final int resid = getResIdForLockUnlockScreen(getActivity(), mLockPatternUtils);
