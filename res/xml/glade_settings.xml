@@ -34,4 +34,11 @@
                 android:icon="@drawable/ic_settings_notification_drawer"
                 />
 
+        <!-- AOKP Animations -->
+       <PreferenceScreen
+            android:key="aokp_animation"
+            android:title="@string/aokp_animation_title"
+            android:summary="@string/aokp_animation_summary"
+            android:fragment="com.android.settings.glade.AnimationControls" />
+
 </PreferenceScreen>
