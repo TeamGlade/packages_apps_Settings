@@ -297,6 +297,7 @@
     <string name="qs_category_title">Quick Settings</string>
     <string name="qs_order_title">Select and order tiles</string>
     <string name="add_qs">Add new tile</string>
+
     <string name="qs_action_delete">Delete</string>
     <string name="qs_action_add">Add</string>
     <string name="qs_action_no_more_tiles">No more tiles available</string>
@@ -318,6 +319,7 @@
     <string name="qs_tile_notifications">Notifications</string>
     <string name="qs_tile_nfc">NFC</string>
     <string name="qs_tile_compass">Compass</string>
+    <string name="qs_tile_screen_timeout">Screen timeout</string>
 
     <!-- Privacy Guard -->
     <string name="privacy_guard_dlg_title">Enable privacy guard?</string>
