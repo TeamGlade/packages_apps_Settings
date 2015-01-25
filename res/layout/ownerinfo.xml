@@ -20,7 +20,7 @@
     android:scrollbars="vertical"
     android:focusable="true"
     android:focusableInTouchMode="true"
-    android:background="@android:color/white">
+    android:background="@color/exposed_bg_dark">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -51,7 +51,8 @@
                 android:layout_marginTop="8dip"
                 android:text="@string/show_owner_info_on_lockscreen_label"
                 android:textAppearance="@android:style/TextAppearance.Material.Subhead"
-                android:textColor="?android:attr/textColorPrimary"
+                android:textColor="@color/exposed_secondary_text_light"
+                android:textAppearance="?android:attr/textAppearanceMedium"
             />
 
             <View
