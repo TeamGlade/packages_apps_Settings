@@ -35,6 +35,7 @@ import android.os.UserManager;
 import android.preference.Preference;
 import android.preference.PreferenceGroup;
 import android.preference.PreferenceScreen;
+import android.preference.SwitchPreference;
 import android.provider.SearchIndexableResource;
 import android.provider.Settings;
 import android.text.TextUtils;
@@ -86,6 +87,12 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
     private static final String KEY_GLADE_SHARE = "share";
 
     static final int TAPS_TO_BE_A_DEVELOPER = 7;
+
+    public static final String PREFS_FILE = "device";
+    public static final String KEY_ADVANCED_MODE = "advanced_mode";
+
+    SwitchPreference mAdvancedSettings;
+
 
     long[] mHits = new long[3];
     int mDevHitCountdown;
@@ -179,11 +186,13 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
                 getPreferenceScreen().removePreference(pref);
             }
         }
+        mAdvancedSettings = (SwitchPreference) findPreference(KEY_ADVANCED_MODE);
     }
 
     @Override
     public void onResume() {
         super.onResume();
+        mAdvancedSettings.setChecked(SettingsActivity.showAdvancedPreferences(getActivity()));
         mDevHitCountdown = getActivity().getSharedPreferences(DevelopmentSettings.PREF_FILE,
                 Context.MODE_PRIVATE).getBoolean(DevelopmentSettings.PREF_SHOW,
                         android.os.Build.TYPE.equals("eng")) ? -1 : TAPS_TO_BE_A_DEVELOPER;
@@ -263,13 +272,12 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
                     Log.e(LOG_TAG, "Unable to start activity " + intent.toString());
                 }
             }
-        } else if (preference.getKey().equals(KEY_GLADE_SHARE)) {
-        Intent intent = new Intent();
-        intent.setAction(Intent.ACTION_SEND);
-        intent.setType("text/plain");
-        intent.putExtra(Intent.EXTRA_TEXT, String.format(
-                getActivity().getString(R.string.share_message), Build.MODEL));
-        startActivity(Intent.createChooser(intent, getActivity().getString(R.string.share_chooser_title)));
+        } else if (preference.getKey().equals(KEY_ADVANCED_MODE)) {
+            final boolean isEnabled = mAdvancedSettings.isChecked();
+            getActivity().getSharedPreferences(PREFS_FILE, 0)
+                    .edit()
+                    .putBoolean(KEY_ADVANCED_MODE, isEnabled)
+                    .apply();
         }
         return super.onPreferenceTreeClick(preferenceScreen, preference);
     }
@@ -515,4 +523,3 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
         };
 
 }
-
