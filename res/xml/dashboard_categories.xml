@@ -311,6 +311,17 @@
                 android:fragment="com.android.settings.cyanogenmod.PerformanceSettings"
                 android:icon="@drawable/ic_settings_performance"
                 />
+				
+		<!-- SuperSU -->
+        <dashboard-tile
+                android:id="@+id/supersu_settings"
+				android:title="@string/supersu_title"
+				android:icon="@drawable/ic_action_permission">
+				<intent
+				    android:action="android.intent.action.MAIN"
+				    android:targetPackage="eu.chainfire.supersu"
+				    android:targetClass="eu.chainfire.supersu.MainActivity" />
+		</dashboard-tile>		
 
         <!-- Development -->
         <dashboard-tile
