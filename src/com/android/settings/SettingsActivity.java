@@ -1205,7 +1205,7 @@ public class SettingsActivity extends Activity
                     if (!hasPrintingSupport) {
                         removeTile = true;
                     }
-				} else if (id == R.id.superuser_settings) {
+				} else if (id == R.id.supersu_settings) {
                     if (!DevelopmentSettings.isRootForAppsEnabled()) {
                         removeTile = true;
                     } else {
