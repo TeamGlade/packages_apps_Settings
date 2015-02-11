@@ -46,6 +46,7 @@ import com.android.settings.notification.OtherSoundSettings;
 import com.android.settings.notification.ZenModeSettings;
 import com.android.settings.print.PrintSettingsFragment;
 import com.android.settings.sim.SimSettings;
+import com.android.settings.screwd.AmbientSettings;
 import com.android.settings.users.UserSettings;
 import com.android.settings.voice.VoiceInputSettings;
 import com.android.settings.wifi.AdvancedWifiSettings;
@@ -265,7 +266,6 @@ public final class SearchIndexableResources {
                         NO_DATA_RES_ID,
                         DeviceInfoSettings.class.getName(),
                         R.drawable.ic_settings_about));
-
         sResMap.put(ButtonSettings.class.getName(),
                 new SearchIndexableResource(
                         Ranking.getRankForClassName(ButtonSettings.class.getName()),
@@ -293,7 +293,13 @@ public final class SearchIndexableResources {
                                 com.android.settings.cyanogenmod.PrivacySettings.class.getName()),
                         R.xml.privacy_settings_cyanogenmod,
                         com.android.settings.cyanogenmod.PrivacySettings.class.getName(),
-                        R.drawable.ic_settings_privacy));
+                        R.drawable.ic_settings_privacy));			
+		sResMap.put(AmbientSettings.class.getName(),
+                new SearchIndexableResource(
+                        Ranking.getRankForClassName(AmbientSettings.class.getName()),
+                        NO_DATA_RES_ID,
+                        AmbientSettings.class.getName(),
+                        R.drawable.ic_settings_display));				
     }
 
     private SearchIndexableResources() {
