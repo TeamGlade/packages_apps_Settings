@@ -1027,10 +1027,6 @@
 
     <!-- Stylus gestures -->
     <string name="stylus_app_not_installed">%s is not installed</string>
-
-    <!-- Pie control -->
-    <string name="pie_control_title">Pie control</string>
-    <string name="pie_control_summary">Disables navigation bar</string>
     
 	<!-- SuperSU header name - the app hides itself from launcher based on this resource name
 	being present in com.android.settings -->
