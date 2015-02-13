@@ -18,7 +18,7 @@
     android:title="@string/glade_settings_title"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
-		<!-- Status bar -->
+	<!-- Status bar -->
         <PreferenceScreen
                 android:id="@+id/status_bar_settings"
                 android:title="@string/status_bar_title"
@@ -33,16 +33,5 @@
                 android:fragment="com.android.settings.cyanogenmod.NotificationDrawerSettings"
                 android:icon="@drawable/ic_settings_notification_drawer"
                 />
-
-        <!-- Gestures -->
-        <PreferenceScreen
-            android:id="@+id/device_specific_gesture_settings"
-            android:title="@string/gesture_settings_title"
-            android:icon="@drawable/ic_settings_gestures">
-            <intent
-                android:action="com.cyanogenmod.action.LAUNCH_TOUCHSCREEN_GESTURE_SETTINGS"
-                android:targetPackage="com.cyanogenmod.settings.device"
-                android:targetClass="com.cyanogenmod.settings.device.TouchscreenGestureSettings" />
-        </PreferenceScreen>
 
 </PreferenceScreen>
