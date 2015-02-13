@@ -28,5 +28,11 @@
     <!-- Glade Settings -->
     <string name="glade_settings_title">Glade Control</string>
 
+    <!-- Share Glade -->
+    <string name="share_liquid_title">Share Glade Rom</string>
+    <string name="share_liquid_summary">Let others know about Glade Rom</string>
+    <string name="share_message">Check out what Glade is all about http://aogp-devs.com/</string>
+    <string name="share_chooser_title">Share Glade Rom</string>
+
 </resources>
 
