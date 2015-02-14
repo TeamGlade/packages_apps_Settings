@@ -50,4 +50,11 @@
             android:icon="@drawable/ic_settings_extdesk_hidenavbar"
             />
 
+    <!-- Wakelock blocker -->
+    <PreferenceScreen
+        android:key="wakelock_blocker"
+        android:title="@string/wakelock_blocker_title"
+        android:fragment="com.android.settings.glade.WakeLockBlocker"
+        />
+
 </PreferenceScreen>
