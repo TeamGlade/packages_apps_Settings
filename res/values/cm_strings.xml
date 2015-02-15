@@ -1031,9 +1031,5 @@
 
     <!-- Stylus gestures -->
     <string name="stylus_app_not_installed">%s is not installed</string>
-    
-	<!-- SuperSU header name - the app hides itself from launcher based on this resource name
-	being present in com.android.settings -->
-	<string name="supersu_title" translatable="false">SuperSU</string>
-	
+
 </resources>
