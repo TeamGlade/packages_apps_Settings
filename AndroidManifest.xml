@@ -1781,6 +1781,10 @@
                        android:resource="@id/security_settings" />
         </activity-alias>
 
+ 	<!-- Glade Control Start -->
+        <activity android:name=".glade.GladeControl" />
+
+        <!-- Glade Control End -->
 
         <!-- Pseudo-activity used to provide an intent-filter entry point to encryption settings -->
         <activity android:name="Settings$CryptKeeperSettingsActivity"

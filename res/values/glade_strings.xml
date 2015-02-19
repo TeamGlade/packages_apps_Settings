@@ -286,4 +286,8 @@
     <string name="link_volume_option_title">Link ringtone &amp; notification volumes</string>
     <string name="notification_volume_option_title">Notification volume</string>
 
+    <!-- Glade Control -->
+    <string name="glade_settings_title">Glade Control</string>
+    <string name="keywords_glade">glade</string>
+
 </resources>
