@@ -39,7 +39,9 @@
             android:key="aokp_animation"
             android:title="@string/aokp_animation_title"
             android:summary="@string/aokp_animation_summary"
-            android:fragment="com.android.settings.glade.AnimationControls" />
+            android:fragment="com.android.settings.glade.AnimationControls" 
+            android:icon="@drawable/ic_glade_animation"
+            />
 
         <!-- Network Traffic -->
         <PreferenceScreen
@@ -47,14 +49,15 @@
             android:fragment="com.android.settings.glade.NetworkTraffic"
             android:summary="@string/network_traffic_summary"
             android:title="@string/network_traffic_title"
-            android:icon="@drawable/ic_settings_extdesk_hidenavbar"
+            android:icon="@drawable/ic_control_network"
             />
 
-    <!-- Wakelock blocker -->
-    <PreferenceScreen
-        android:key="wakelock_blocker"
-        android:title="@string/wakelock_blocker_title"
-        android:fragment="com.android.settings.glade.WakeLockBlocker"
+        <!-- Wakelock blocker -->
+        <PreferenceScreen
+            android:key="wakelock_blocker"
+            android:title="@string/wakelock_blocker_title"
+            android:fragment="com.android.settings.glade.WakeLockBlocker"
+            android:icon="@drawable/ic_glade_wakelock"
         />
 
 </PreferenceScreen>
