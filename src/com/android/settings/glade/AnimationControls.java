@@ -30,7 +30,7 @@ import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.glade.AnimBarPreference;
 import com.android.settings.R;
 
-import com.android.internal.util.crdroid.AwesomeAnimationHelper;
+import com.android.internal.util.glade.AwesomeAnimationHelper;
 
 import java.util.Arrays;
 
