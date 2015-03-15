@@ -74,10 +74,6 @@ public class SettingsPreferenceFragment extends PreferenceFragment implements Di
 
     private String mHelpUrl;
 
-    protected Context mContext;
-
-    protected ContentResolver mContentRes;
-
     // Cache the content resolver for async callbacks
     private ContentResolver mContentResolver;
 
@@ -104,6 +100,10 @@ public class SettingsPreferenceFragment extends PreferenceFragment implements Di
     @Override
     public void onCreate(Bundle icicle) {
         super.onCreate(icicle);
+
+        if (icicle != null) {
+            mPreferenceHighlighted = icicle.getBoolean(SAVE_HIGHLIGHTED_KEY);
+        }
 
         // Prepare help url and enable menu if necessary
         int helpResource = getHelpResource();
@@ -689,9 +689,5 @@ public class SettingsPreferenceFragment extends PreferenceFragment implements Di
                     + ", requestCode: " + requestCode + ")");
             return false;
         }
-    }
-
-    public void setTitle(int resId) {
-        getActivity().setTitle(resId);
     }
 }
