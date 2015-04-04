@@ -87,4 +87,3 @@
 	        android:fragment="com.android.settings.glade.NavigationBarSettings"
 	        android:title="@string/navigation_bar_title" />
 </PreferenceScreen>
-
