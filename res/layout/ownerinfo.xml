@@ -52,7 +52,6 @@
                 android:text="@string/show_owner_info_on_lockscreen_label"
                 android:textAppearance="@android:style/TextAppearance.Material.Subhead"
                 android:textColor="@color/exposed_secondary_text_light"
-                android:textAppearance="?android:attr/textAppearanceMedium"
             />
 
             <View
