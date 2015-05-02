@@ -2,5 +2,5 @@
 host=gerrit.aogp-devs.com
 port=29418
 project=packages_apps_Settings.git
-defaultbranch=5.1
+defaultbranch=5.1-caf
 
